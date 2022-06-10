@@ -1,0 +1,45 @@
+{
+    "name": "gitbook-plugin-get-pdf",
+    "description": "在页面左上角添加下载 PDF 链接",
+    "version": "0.0.1",
+    "engines": {
+        "gitbook": ">=2.0.0"
+    },
+    "author": {
+        "name": "suranyi",
+        "email": "suranyi.sysu@gmail.com"
+    },
+    "keywords": [
+        "gitbook",
+        "gitbook-plugin",
+        "pdf",
+        "pdf-link"
+    ],
+    "gitbook": {
+        "properties": {
+            "base": {
+                "required": true,
+                "title": "Base for the PDF button redirection",
+                "type": "string"
+            },
+            "prefix": {
+                "default": "book",
+                "title": "在多语言下, 链接为 prefix_[lang].pdf; 在单语言下, 链接为 prefix.pdf",
+                "type": "string"
+            },
+            "label": {
+                "default": "",
+                "title": "下载 PDF 的按钮",
+                "type": [
+                    "string",
+                    "object"
+                ]
+            }
+        }
+    },
+    "homepage": "https://github.com/Zhangliubin/gitbook-plugin-get-pdf",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Zhangliubin/gitbook-plugin-get-pdf.git"
+    }
+}
